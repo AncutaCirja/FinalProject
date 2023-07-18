@@ -1,5 +1,14 @@
 package Pages;
 
+import org.junit.After;
+import org.junit.BeforeClass;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
+import org.testng.annotations.AfterMethod;
+
+import java.nio.file.Paths;
+
 public class BasePage {
     protected WebDriver driver;
     private String baseURL = "https://www.lambdatest.com/selenium-playground/";
